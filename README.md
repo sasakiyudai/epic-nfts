@@ -13,3 +13,8 @@ npx hardhat node
 node scripts/sample-script.js
 npx hardhat help
 ```
+
+set hardhat.config.js. then, 
+```
+npx hardhat run scripts/deploy.js --network rinkeby
+```
