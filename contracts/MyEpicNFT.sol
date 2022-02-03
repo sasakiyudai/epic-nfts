@@ -61,6 +61,7 @@ contract MyEpicNFT is ERC721URIStorage {
 
 	function makeAnEpicNFT() public {
 		uint256 newItemId = _tokenIds.current();
+		require(newItemId < 50, "There are no NFTs left.");
 
 		string memory first = pickRandomFirstWord(newItemId);
 		string memory second = pickRandomSecondWord(newItemId);
